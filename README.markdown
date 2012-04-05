@@ -1,3 +1,16 @@
+## Fork notes
+
+instabackup just grabs the .jpg and stuffs the caption in the filename; great minimal first start, but I want a little more than that.  Current additions:
+
+  * basic image page
+  * basic (first-page only, I only have four pictures so far) index page with links
+  * uses python str.format() - should upgrade to jinja2 or something that has loops :-)
+  * stashes all of the metadata in a .json "next to" the .jpg, for easier (later) reprocessing with new templates
+
+Next steps:  for now, actually see if I use instagram enough to polish the templates, and maybe split backup from rebuild-formatting.  (The Android instagram app is amazingly tedious to actually use - a dozen clicks to get a picture uploaded, and that's assuming you don't dither over filters?  I'm guessing the iphone app isn't like that, or it would never have gotten popular :)
+
+## Original README
+
 instabackup is a quick hack to back up your instagram stream. I put it together in 20 mins. It's raw. I don't care.
 
 Run it, and it'll download all the photos from yuor instagram feed into the current directory, named with the upload date and title. It won't re-download files that already exist, so you can safely run it nightly and just download new photos if you want to do that.
